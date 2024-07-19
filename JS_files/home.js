@@ -24,7 +24,7 @@ user_btn.addEventListener('click', (event) => {
         logout_box.style.display = 'block';
         logout_box.style.textAlign = 'center';
         logout_box.style.paddingTop = '20px';
-    } else {
+    } else{
         logout_box.style.display = 'none';
     }
 });

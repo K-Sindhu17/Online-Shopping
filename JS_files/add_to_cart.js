@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     item_list.innerHTML = '';
 
     let totalPrice = 0;
-
+ 
     cart.forEach((item, index) => {
         const itemHTML = `
                 <div class="cart_item" id="cart_item_${index}">
