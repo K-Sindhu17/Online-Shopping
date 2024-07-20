@@ -3,8 +3,8 @@ let home_btn = document.getElementById('home');
 console.log(home_btn);
 
 home_btn.addEventListener('click', () => {
-    window.location.href = 'home.html';
-    // window.open('home.html')
+    window.location.href = '../html_files/home.html';
+    // window.open('../html_files/home.html')
 });
 
 let userEmail = document.getElementById('userEmail');
@@ -32,7 +32,7 @@ user_btn.addEventListener('click', (event) => {
 // target logout button
 let logout_btn = document.getElementById('logout_btn');
 logout_btn.addEventListener('click', () => {
-    window.location.href = '../main_folder/index.html';
+    window.location.href = '../index.html';
 });
 
 // fetching

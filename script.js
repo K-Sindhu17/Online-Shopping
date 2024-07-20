@@ -11,7 +11,7 @@ logo_btn.addEventListener('click', () => {
 let login_btn = document.getElementById('login')
  
 login_btn.addEventListener('click', () => {
-    window.location.href = '../html_files/login.html'
+    window.location.href = './html_files/login.html'
 });
 
 
@@ -19,5 +19,5 @@ login_btn.addEventListener('click', () => {
 let register_btn = document.getElementById('register')
  
 register_btn.addEventListener('click', () => {
-    window.location.href = '../html_files/register.html'
+    window.location.href = './html_files/register.html'
 });
