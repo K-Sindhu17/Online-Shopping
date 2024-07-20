@@ -48,7 +48,7 @@ function updateQuantity(event) {
     else if (action === 'decrease') {
         cart[productIndex].quantity = Math.max(1, cart[productIndex].quantity - 1);
         
-    } 
+    }  
     else if (action === 'remove') {
         cart.splice(productIndex, 1);
     }
@@ -61,9 +61,13 @@ function updateQuantity(event) {
 // target submit button
 
 let submit_btn = document.getElementById('submit_btn')
-console.log(submit_btn);
+// console.log(submit_btn);
 
 submit_btn.addEventListener('click', () => {
-    document.write(`<h1>Order Successfully placed</h1>`)
-    window.open
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    if (cart.length > 0) {
+        document.write('<h1>Order Successfully placed</h1>');
+    } else {
+        alert('Cart is empty, add items');
+    }
 })
