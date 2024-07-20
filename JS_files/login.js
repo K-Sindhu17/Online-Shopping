@@ -35,7 +35,8 @@ login_btn.addEventListener('click', (demo) => {
     else if(email === Email && password === Pwd) {
         // Redirect to home page
         alert('successfully login...');
-        window.open('../html_files/home.html');
+        window.location.href = '../html_files/home.html';
+        // window.open('../html_files/home.html');
     } 
     else{
         alert('Invalid details. Please register..');

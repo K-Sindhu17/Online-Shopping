@@ -7,23 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let totalPrice = 0;
  
     cart.forEach((item, index) => {
-        // const itemHTML = `
-        //         <div class="cart_item" id="cart_item_${index}">
-        //             <div class="image">
-        //                 <img src="${item.image}" class="photo" alt="${item.title}">
-        //             </div>
-        //             <div class="name">${item.title}</div>
-        //             <div class="price">&#8377; ${item.price}</div>
-        //             <div class="Quantity">
-        //                 <span class="minus brd" data-id="${item.id}" data-action="decrease">-</span>
-        //                 <span>${item.quantity}</span>
-        //                 <span class="plus brd" data-id="${item.id}" data-action="increase">+</span>
-        //                 <span class="brd1"><i class="fa-regular fa-trash-can" data-id="${item.id}" data-action="remove"></i></span>
-        //             </div>
-        //         </div>
-        // `;
-        // item_list.innerHTML += itemHTML;
-        // totalPrice += item.price * item.quantity;
 
         if (item.quantity > 0) {
             const itemHTML = `
